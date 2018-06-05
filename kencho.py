@@ -8,7 +8,8 @@ capitals = ['札幌市', '青森市', '盛岡市', '仙台市', '秋田市', '�
                 '新宿区', '横浜市', '新潟市', '富山市', '金沢市', '福井市', '甲府市', '長野市', '岐阜市', '静岡市']
 
 #generate random question number
-questionNumber = 0;
+from random import randint
+questionNumber = randint(0, len(prefectures));
 
 print(prefectures[questionNumber])
 
