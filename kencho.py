@@ -2,6 +2,11 @@ prefectures = ['北海道', '青森県', '岩手県', '宮城県', '秋田県', 
                 '東京都', '神奈川県', '新潟県', '富山県', '石川県', '福井県', '山梨県', '長野県', '岐阜県', '静岡県', '愛知県', '三重県',
                 '滋賀県', '京都府', '大阪府', '兵庫県', '奈良県', '和歌山県', '鳥取県', '島根県', '岡山県', '広島県', '山口県', '徳島県',
                 '香川県', '愛媛県', '高知県', '福岡県', '佐賀県', '長崎県', '熊本県', '大分県', '宮崎県', '鹿児島県', '沖縄県']
+prefecturesEN = ['Hokkaidō', 'Aomori', 'Iwate', 'Miyagi', 'Akita', 'Yamagata', 'Fukushima', 'Ibaraki', 'Tochigi', 'Gunma',
+                    'Saitama', 'Chiba', 'Tōkyō', 'Kanagawa', 'Niigata', 'Toyama', 'Ishikawa', 'Fukui', 'Yamanashi', 'Nagano',
+                    'Gifu', 'Shizuoka', 'Aichi', 'Mie', 'Shiga', 'Kyōto', 'Ōsaka', 'Hyōgo', 'Nara', 'Wakayama', 'Tottori',
+                    'Shimane', 'Okayama', 'Hiroshima', 'Yamaguchi', 'Tokushima', 'Kagawa', 'Ehime', 'Kōchi', 'Fukuoka', 'Saga',
+                    'Nagasaki', 'Kumamoto', 'Ōita', 'Miyazaki', 'Kagoshima', 'Okinawa']
 capitals = ['札幌市', '青森市', '盛岡市', '仙台市', '秋田市', '山形市', '福島市', '水戸市', '宇都宮市', '前橋市', 'さいたま市', '千葉市',
                 '新宿区', '横浜市', '新潟市', '富山市', '金沢市', '福井市', '甲府市', '長野市', '岐阜市', '静岡市', '名古屋市', '津市',
                 '大津市', '京都市', '大阪市', '神戸市', '奈良市', '和歌山市', '鳥取市', '松江市', '岡山市', '広島市', '山口市', '徳島市',
@@ -39,7 +44,7 @@ elif (gameType == 2):
     from random import randint
     questionNumber = randint(0, len(prefectures)-1)
 
-    print(prefectures[questionNumber])
+    print(prefectures[questionNumber] + "(" + prefecturesEN[questionNumber] + ")")
 
     input = input("")
 
