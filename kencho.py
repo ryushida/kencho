@@ -22,6 +22,8 @@ print ('Type 1 for Kanji only. Type 2 for Kanji with hiragana')
 gameType = input("")
 gameType = int(gameType)
 
+problems = input("Number of Problems: ")
+
 if (gameType == 1):
 
     print('これから表示される都道府県の県庁所在地を当ててください。好きなキーを押せば答えが表示されます。')
