@@ -6,8 +6,13 @@ capitals = ['札幌市', '青森市', '盛岡市', '仙台市', '秋田市', '�
                 '新宿区', '横浜市', '新潟市', '富山市', '金沢市', '福井市', '甲府市', '長野市', '岐阜市', '静岡市', '名古屋市', '津市',
                 '大津市', '京都市', '大阪市', '神戸市', '奈良市', '和歌山市', '鳥取市', '松江市', '岡山市', '広島市', '山口市', '徳島市',
                 '高松市', '松山市', '高知市', '福岡市', '佐賀市', '長崎市', '熊本市', '大分市', '宮崎市', '鹿児島市', '沖縄市']
+capitalsEN = ['Sapporo', 'Aomori', 'Morioka', 'Sendai', 'Akita', 'Yamagata', 'Fukushima', 'Mito', 'Utsunomiya', 'Maebashi',
+                'Saitama', 'Chiba', 'Shinjuku', 'Yokohama', 'Niigata', 'Toyama', 'Kanazawa', 'Fukui', 'Kōfu', 'Nagano', 'Gifu',
+                'Shizuoka', 'Nagoya', 'Tsu', 'Ōtsu', 'Kyoto', 'Osaka', 'Kobe', 'Nara', 'Wakayama', 'Tottori', 'Matsue', 'Okayama',
+                'Hiroshima', 'Yamaguchi', 'Tokushima', 'Takamatsu', 'Matsuyama', 'Kouchi', 'Fukuoka', 'Saga', 'Nagasaki',
+                'Kumamoto', 'Ōita', 'Miyazaki', 'Kagoshima', 'Okinawa']
 
-print ('Type 1 for Kanji only')
+print ('Type 1 for Kanji only. Type 2 for Kanji with hiragana')
 
 gameType = input("")
 gameType = int(gameType)
@@ -26,5 +31,19 @@ if (gameType == 1):
 
     # show answer after pressing enter
     print(capitals[questionNumber])
+elif (gameType == 2):
+
+    print('これから表示される都道府県の県庁所在地を当ててください。好きなキーを押せば答えが表示されます。')
+
+    #generate random question number
+    from random import randint
+    questionNumber = randint(0, len(prefectures)-1)
+
+    print(prefectures[questionNumber])
+
+    input = input("")
+
+    # show answer after pressing enter
+    print(capitals[questionNumber] + "(" + capitalsEN[questionNumber] + ")")
 else:
     print("else")
