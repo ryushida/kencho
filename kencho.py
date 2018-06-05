@@ -9,7 +9,7 @@ capitals = ['札幌市', '青森市', '盛岡市', '仙台市', '秋田市', '�
 
 #generate random question number
 from random import randint
-questionNumber = randint(0, len(prefectures));
+questionNumber = randint(0, len(prefectures)-1)
 
 print(prefectures[questionNumber])
 
