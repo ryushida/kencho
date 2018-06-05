@@ -1,7 +1,3 @@
-print ('Type 1 for Kanji only')
-
-print('これから表示される都道府県の県庁所在地を当ててください。好きなキーを押せば答えが表示されます。')
-
 prefectures = ['北海道', '青森県', '岩手県', '宮城県', '秋田県', '山形県', '福島県', '茨木県', '栃木県', '群馬県', '埼玉県', '千葉県',
                 '東京都', '神奈川県', '新潟県', '富山県', '石川県', '福井県', '山梨県', '長野県', '岐阜県', '静岡県', '愛知県', '三重県',
                 '滋賀県', '京都府', '大阪府', '兵庫県', '奈良県', '和歌山県', '鳥取県', '島根県', '岡山県', '広島県', '山口県', '徳島県',
@@ -11,13 +7,24 @@ capitals = ['札幌市', '青森市', '盛岡市', '仙台市', '秋田市', '�
                 '大津市', '京都市', '大阪市', '神戸市', '奈良市', '和歌山市', '鳥取市', '松江市', '岡山市', '広島市', '山口市', '徳島市',
                 '高松市', '松山市', '高知市', '福岡市', '佐賀市', '長崎市', '熊本市', '大分市', '宮崎市', '鹿児島市', '沖縄市']
 
-#generate random question number
-from random import randint
-questionNumber = randint(0, len(prefectures)-1)
+print ('Type 1 for Kanji only')
 
-print(prefectures[questionNumber])
+gameType = input("")
+gameType = int(gameType)
 
-input = input("")
+if (gameType == 1):
 
-# show answer after pressing enter
-print(capitals[questionNumber])
+    print('これから表示される都道府県の県庁所在地を当ててください。好きなキーを押せば答えが表示されます。')
+
+    #generate random question number
+    from random import randint
+    questionNumber = randint(0, len(prefectures)-1)
+
+    print(prefectures[questionNumber])
+
+    input = input("")
+
+    # show answer after pressing enter
+    print(capitals[questionNumber])
+else:
+    print("else")
