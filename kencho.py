@@ -23,6 +23,7 @@ gameType = input("")
 gameType = int(gameType)
 
 problems = input("Number of Problems: ")
+problems = int(problems)
 
 if (gameType == 1):
 
