@@ -17,7 +17,7 @@ capitalsEN = ['Sapporo', 'Aomori', 'Morioka', 'Sendai', 'Akita', 'Yamagata', 'Fu
                 'Hiroshima', 'Yamaguchi', 'Tokushima', 'Takamatsu', 'Matsuyama', 'Kouchi', 'Fukuoka', 'Saga', 'Nagasaki',
                 'Kumamoto', 'Ōita', 'Miyazaki', 'Kagoshima', 'Okinawa']
 
-print ('Type 1 for Kanji only. Type 2 for Kanji with hiragana')
+print ('Type 1 for Kanji only. Type 2 for Kanji with romaji')
 
 gameType = input("")
 gameType = int(gameType)
