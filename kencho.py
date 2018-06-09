@@ -45,15 +45,17 @@ elif (gameType == 2):
 
     print('これから表示される都道府県の県庁所在地を当ててください。好きなキーを押せば答えが表示されます。')
 
-    #generate random question number
-    from random import randint
-    questionNumber = randint(0, len(prefectures)-1)
+    for i in range(problems):
 
-    print(prefectures[questionNumber] + "(" + prefecturesEN[questionNumber] + ")")
+        #generate random question number
+        from random import randint
+        questionNumber = randint(0, len(prefectures)-1)
 
-    input = input("")
+        print(prefectures[questionNumber] + "(" + prefecturesEN[questionNumber] + ")")
 
-    # show answer after pressing enter
-    print(capitals[questionNumber] + "(" + capitalsEN[questionNumber] + ")")
+        answerinput = input("")
+
+        # show answer after pressing enter
+        print(capitals[questionNumber] + "(" + capitalsEN[questionNumber] + ")")
 else:
     print("else")
