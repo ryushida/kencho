@@ -25,8 +25,6 @@ gameType = int(gameType)
 problems = input("Number of Problems: ")
 problems = int(problems)
 
-points = 0
-
 if (gameType == 1):
 
     print('これから表示される都道府県の県庁所在地を当ててください。好きなキーを押せば答えが表示されます。')
@@ -43,8 +41,6 @@ if (gameType == 1):
 
         # show answer after pressing enter
         print(capitals[questionNumber])
-
-        points += 1
 
 elif (gameType == 2):
 
@@ -63,6 +59,5 @@ elif (gameType == 2):
         # show answer after pressing enter
         print(capitals[questionNumber] + "(" + capitalsEN[questionNumber] + ")")
 
-        points += 1
 else:
     print("else")
