@@ -76,5 +76,6 @@ while True:
             break
 
     else:
-        print("else")
+        print ('Please select 1 or 2')
+        break
 
