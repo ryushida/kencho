@@ -17,11 +17,12 @@ capitalsEN = ['Sapporo', 'Aomori', 'Morioka', 'Sendai', 'Akita', 'Yamagata', 'Fu
                 'Hiroshima', 'Yamaguchi', 'Tokushima', 'Takamatsu', 'Matsuyama', 'Kōchi', 'Fukuoka', 'Saga', 'Nagasaki',
                 'Kumamoto', 'Ōita', 'Miyazaki', 'Kagoshima', 'Okinawa']
 
-while True:
-    print ('Type 1 for Kanji only. Type 2 for Kanji with romaji')
+print ('Type 1 for Kanji only. Type 2 for Kanji with romaji')
 
-    gameType = input("")
-    gameType = int(gameType)
+gameType = input("")
+gameType = int(gameType)
+
+while True:
 
     problems = input("Number of Problems: ")
     problems = int(problems)
