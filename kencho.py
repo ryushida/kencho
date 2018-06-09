@@ -25,22 +25,26 @@ gameType = int(gameType)
 problems = input("Number of Problems: ")
 problems = int(problems)
 
+questionNumber = 0
+
+def generateProblem():
+    #generate random question number
+    from random import randint
+    questionNumber = randint(0, len(prefectures)-1)
+    return questionNumber
+
 if (gameType == 1):
 
     print('これから表示される都道府県の県庁所在地を当ててください。好きなキーを押せば答えが表示されます。')
 
     for i in range(problems):
 
-        #generate random question number
-        from random import randint
-        questionNumber = randint(0, len(prefectures)-1)
-
-        print(prefectures[questionNumber])
+        print(prefectures[generateProblem()])
 
         answerinput = input("")
 
         # show answer after pressing enter
-        print(capitals[questionNumber])
+        print(capitals[generateProblem()])
 
 elif (gameType == 2):
 
@@ -48,16 +52,13 @@ elif (gameType == 2):
 
     for i in range(problems):
 
-        #generate random question number
-        from random import randint
-        questionNumber = randint(0, len(prefectures)-1)
-
-        print(prefectures[questionNumber] + "(" + prefecturesEN[questionNumber] + ")")
+        print(prefectures[generateProblem()] + "(" + prefecturesEN[generateProblem()] + ")")
 
         answerinput = input("")
 
         # show answer after pressing enter
-        print(capitals[questionNumber] + "(" + capitalsEN[questionNumber] + ")")
+        print(capitals[generateProblem()] + "(" + capitalsEN[generateProblem()] + ")")
 
 else:
     print("else")
+
