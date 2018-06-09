@@ -47,6 +47,11 @@ while True:
             # show answer after pressing enter
             print(capitals[generateProblem()])
 
+        continuation = input("Type q to quit, or any other key to continue: ")
+
+        if(continuation == "q"):
+            break
+
     elif (gameType == 2):
 
         print('これから表示(hyōji)される都道府県(todōfuken)の県庁所在地(kenchōshozaichi)を当ててください。好きなキーを押せば答えが表示されます。')
@@ -59,6 +64,11 @@ while True:
 
             # show answer after pressing enter
             print(capitals[generateProblem()] + "(" + capitalsEN[generateProblem()] + ")")
+
+        continuation = input("Type q to quit, or any other key to continue: ")
+
+        if(continuation == "q"):
+            break
 
     else:
         print("else")
