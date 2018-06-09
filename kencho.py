@@ -40,12 +40,14 @@ while True:
 
         for i in range(problems):
 
-            print(prefectures[generateProblem()])
+            problemNumber = generateProblem()
+
+            print(prefectures[problemNumber])
 
             answerinput = input("")
 
             # show answer after pressing enter
-            print(capitals[generateProblem()])
+            print(capitals[problemNumber])
 
         continuation = input("Type q to quit, or any other key to continue: ")
 
@@ -58,12 +60,14 @@ while True:
 
         for i in range(problems):
 
-            print(prefectures[generateProblem()] + "(" + prefecturesEN[generateProblem()] + ")")
+            problemNumber = generateProblem()
+
+            print(prefectures[problemNumber] + "(" + prefecturesEN[problemNumber] + ")")
 
             answerinput = input("")
 
             # show answer after pressing enter
-            print(capitals[generateProblem()] + "(" + capitalsEN[generateProblem()] + ")")
+            print(capitals[problemNumber] + "(" + capitalsEN[problemNumber] + ")")
 
         continuation = input("Type q to quit, or any other key to continue: ")
 
