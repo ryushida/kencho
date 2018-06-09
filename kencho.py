@@ -35,7 +35,7 @@ def generateProblem():
 
 if (gameType == 1):
 
-    print('これから表示される都道府県の県庁所在地を当ててください。好きなキーを押せば答えが表示されます。')
+    print('これから表示(hyōji)される都道府県(todōfuken)の県庁所在地(kenchōshozaichi)を当ててください。好きなキーを押せば答えが表示されます。')
 
     for i in range(problems):
 
