@@ -14,7 +14,7 @@ capitals = ['札幌市', '青森市', '盛岡市', '仙台市', '秋田市', '�
 capitalsEN = ['Sapporo', 'Aomori', 'Morioka', 'Sendai', 'Akita', 'Yamagata', 'Fukushima', 'Mito', 'Utsunomiya', 'Maebashi',
                 'Saitama', 'Chiba', 'Shinjuku', 'Yokohama', 'Niigata', 'Toyama', 'Kanazawa', 'Fukui', 'Kōfu', 'Nagano', 'Gifu',
                 'Shizuoka', 'Nagoya', 'Tsu', 'Ōtsu', 'Kyoto', 'Osaka', 'Kobe', 'Nara', 'Wakayama', 'Tottori', 'Matsue', 'Okayama',
-                'Hiroshima', 'Yamaguchi', 'Tokushima', 'Takamatsu', 'Matsuyama', 'Kouchi', 'Fukuoka', 'Saga', 'Nagasaki',
+                'Hiroshima', 'Yamaguchi', 'Tokushima', 'Takamatsu', 'Matsuyama', 'Kōchi', 'Fukuoka', 'Saga', 'Nagasaki',
                 'Kumamoto', 'Ōita', 'Miyazaki', 'Kagoshima', 'Okinawa']
 
 print ('Type 1 for Kanji only. Type 2 for Kanji with romaji')
