@@ -17,9 +17,15 @@ capitalsEN = ['Sapporo', 'Aomori', 'Morioka', 'Sendai', 'Akita', 'Yamagata', 'Fu
                 'Hiroshima', 'Yamaguchi', 'Tokushima', 'Takamatsu', 'Matsuyama', 'Kōchi', 'Fukuoka', 'Saga', 'Nagasaki',
                 'Kumamoto', 'Ōita', 'Miyazaki', 'Kagoshima', 'Okinawa']
 
-print ('Type 1 for Kanji only. Type 2 for Kanji with romaji')
+gameType = 0
 
-gameType = input("")
+while True:
+    gameType = input('Type 1 for Kanji only. Type 2 for Kanji with romaji:')
+    if gameType.lower() not in ('1', '2'):
+        print("Not an appropriate choice.")
+    else:
+        break
+
 gameType = int(gameType)
 
 while True:
