@@ -30,8 +30,8 @@ gameType = int(gameType)
 
 while True:
 
-    problems = input("Number of Problems: ")
-    problems = int(problems)
+    n = input("Number of Problems: ")
+    n = int(n)
 
     questionNumber = 0
 
@@ -45,7 +45,7 @@ while True:
 
         print('これから表示される都道府県の県庁所在地を当ててください。好きなキーを押せば答えが表示されます。')
 
-        for i in range(problems):
+        for i in range(n):
 
             problemNumber = generateProblem()
 
@@ -65,7 +65,7 @@ while True:
 
         print('これから表示(hyōji)される都道府県(todōfuken)の県庁所在地(kenchōshozaichi)を当ててください。好きなキーを押せば答えが表示されます。')
 
-        for i in range(problems):
+        for i in range(n):
 
             problemNumber = generateProblem()
 
