@@ -30,8 +30,13 @@ gameType = int(gameType)
 
 while True:
 
-    n = input("Number of Problems: ")
-    n = int(n)
+    while True:
+        n = input("Number of Problems: ")
+        n = int(n)
+        if n < 1:
+            print("Select a number greater than 0")
+        else:
+            break
 
     questionNumber = 0
 
