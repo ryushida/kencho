@@ -43,7 +43,7 @@ while True:
 
     questionNumber = 0
 
-    def generateProblem():
+    def generate_problem():
         #generate random question number
         from random import randint
         problem = randint(0, len(prefectures)-1)
@@ -55,7 +55,7 @@ while True:
 
         for i in range(n):
 
-            problemNumber = generateProblem()
+            problemNumber = generate_problem()
 
             print(prefectures[problemNumber])
 
@@ -75,7 +75,7 @@ while True:
 
         for i in range(n):
 
-            problemNumber = generateProblem()
+            problemNumber = generate_problem()
 
             print(prefectures[problemNumber] + "(" + prefecturesEN[problemNumber] + ")")
 
