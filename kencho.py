@@ -22,7 +22,7 @@ gameType = 0
 while True:
     gameType = input('Type 1 for Kanji only. Type 2 for Kanji with romaji:')
     if gameType.lower() not in ('1', '2'):
-        print("Not an appropriate choice.")
+        print('Not an appropriate choice.')
     else:
         break
 
@@ -33,13 +33,13 @@ while True:
     while True:
         n = 0
         try:
-            n = int(input("Number of Problems: "))
+            n = int(input('Number of Problems: '))
             if n < 1:
-                print("Select a number greater than 0")
+                print('Select a number greater than 0')
             else:
                 break
         except ValueError:
-            print("Please input an integer")
+            print('Please input an integer')
 
     questionNumber = 0
 
@@ -59,14 +59,14 @@ while True:
 
             print(prefectures[problemNumber])
 
-            answerinput = input("")
+            answerinput = input('')
 
             # show answer after pressing enter
             print(capitals[problemNumber])
 
-        continuation = input("Type q to quit, or any other key to continue: ")
+        continuation = input('Type q to quit, or any other key to continue: ')
 
-        if(continuation == "q"):
+        if(continuation == 'q'):
             break
 
     elif (gameType == 2):
@@ -77,16 +77,16 @@ while True:
 
             problemNumber = generate_problem()
 
-            print(prefectures[problemNumber] + "(" + prefecturesEN[problemNumber] + ")")
+            print(prefectures[problemNumber] + '(' + prefecturesEN[problemNumber] + ')')
 
-            answerinput = input("")
+            answerinput = input('')
 
             # show answer after pressing enter
-            print(capitals[problemNumber] + "(" + capitalsEN[problemNumber] + ")")
+            print(capitals[problemNumber] + '(' + capitalsEN[problemNumber] + ')')
 
-        continuation = input("Type q to quit, or any other key to continue: ")
+        continuation = input('Type q to quit, or any other key to continue: ')
 
-        if(continuation == "q"):
+        if(continuation == 'q'):
             break
 
     else:
