@@ -46,8 +46,8 @@ while True:
     def generateProblem():
         #generate random question number
         from random import randint
-        questionNumber = randint(0, len(prefectures)-1)
-        return questionNumber
+        problem = randint(0, len(prefectures)-1)
+        return problem
 
     if (gameType == 1):
 
