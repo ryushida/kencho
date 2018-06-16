@@ -29,14 +29,17 @@ while True:
 gameType = int(gameType)
 
 while True:
-
+    
     while True:
-        n = input("Number of Problems: ")
-        n = int(n)
-        if n < 1:
-            print("Select a number greater than 0")
-        else:
-            break
+        n = 0
+        try:
+            n = int(input("Number of Problems: "))
+            if n < 1:
+                print("Select a number greater than 0")
+            else:
+                break
+        except ValueError:
+            print("Please input an integer")
 
     questionNumber = 0
 
